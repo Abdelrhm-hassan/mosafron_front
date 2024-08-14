@@ -1,0 +1,403 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <link rel="stylesheet" href="assets/css/style.css">
+   <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css   ">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <!-- select box -->
+    <!-- <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.6.3/css/bootstrap-select.min.css" /> -->
+    <title>Travels details </title>
+  </head>
+  <body class="">
+    <style>
+    .form-group {
+    margin-top: 40px; /* Space for the label */
+}
+
+.floating-label {
+    position: absolute;
+    top: -10px;
+    right: 15px;
+    background-color: white;
+    padding: 0 5px;
+    font-family: "Your Custom Font", sans-serif;
+    font-size: 16px;
+    color: #00695c; /* Custom color for the label */
+}
+
+.float_input {
+    border-radius: 10px; /* Rounded corners */
+    padding: 30px; /* Padding inside the input */
+    border: 2px solid #00acc1; /* Border color */
+    font-family: "Your Custom Font", sans-serif;
+    font-size: 16px;
+    padding-right: 15px; /* Ensure padding for the label space */
+}
+.position-relative{
+    margin-top: 35px;
+}
+
+    </style>
+    <div dir="rtl" class="container " >
+        <!-- navbar -->
+         <section   class="" >
+                <div  class="  nav_template">
+                  <nav class="navbar navbar-expand-lg navbar-light">
+                        <div class="container-fluid">
+                        <a class="navbar-brand" href="#">
+                            <img src="assets/images/logo.png" alt="">
+                        </a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse  " id="navbarSupportedContent">
+                            <ul class=" nav  navbar-nav   mb-2 mb-lg-0  navlink  text-center " >
+                                <a href="index.html" class="nav-link active">
+                                    <i class="fa-solid fa-house"></i>
+                                <span>
+                                    الرئيسية
+                                </span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link " href="#">
+                                    <i class="fa-solid fa-car"></i>
+                                    <span>
+                                    تاجير سيارات
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link " href="#">
+                                    <i class="fa-solid fa-car"></i>
+                                    <span>
+                                    رحلات
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="fa-solid fa-book"></i>
+                                <span> معلومات عامة </span>
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="nav-item navlink ">
+                              <a class="nav-link" href="#">
+                                <i class="fa-solid fa-address-card"></i>
+                                  تسجيل الدخول </a>
+                              </li>
+                              <li class="nav-item">
+                                  <a class="nav-link" href="#">
+                                    <i class="fa-solid fa-headset"></i>
+                                  مساعدة </a>
+                              </li>                            
+                            </ul>
+                        </div>
+                        </div>
+                    </nav>
+
+
+
+
+                </div>
+         </section>
+         <!-- section 1 -->
+         <section class="section_2 row" style="background-image: url('');" >
+          <div class="image-container container p-0">
+            <img src="assets/images/nav_bg1.png" alt="" class="masked-img">
+          <div class="mask"></div> 
+        </div>
+          <!-- <div class="search_bar"></div> -->
+          <!-- section2 -->
+          <div class="container search">
+          
+            <div class="row booking-form  g-3 mt-3">
+                <h2> بيانات الحجز </h2>
+                <div class="col-lg-8 col-sm">
+                    <div class="row g-3 ">
+                        <div class="col-lg-6 col-sm position-relative">
+                            <label for="full-name" class="floating-label">الاسم بالكامل</label>
+                            <input type="text" placeholder=" الاسم بالكامل " class="float_input form-control" id="full-name" placeholder=" ">
+                        </div>
+                        <div class="col-lg-6 col-sm position-relative">
+                            <label for="id-passport" class="floating-label">رقم الهوية او رقم جواز السفر</label>
+                            <input type="text"  class="float_input form-control" id="id-passport" placeholder="رقم الهوية او رقم جواز السفر ">
+                        </div>
+                    </div>
+                    <div class="row g-3 pt-2">
+                        <div class="col-lg-6 col-sm position-relative">
+                            <label for="email" class="floating-label">عنوان البريد الإلكتروني</label>
+                            <input type="text" class="float_input form-control" id="email" placeholder=" عنوان البريد الإلكتروني ">
+                        </div>
+                        <div class="col-lg-6 col-sm position-relative">
+                            <label for="confirm-email" class="floating-label">تأكيد عنوان البريد الإلكتروني</label>
+                            <input type="text" class="float_input form-control" id="confirm-email" placeholder=" تأكيد عنوان البريد الإلكتروني ">
+                        </div>
+                    </div>
+                    <div class="row g-3 pt-2">
+                        <div class="col-lg-6 col-sm position-relative">
+                            <label for="address" class="floating-label">الدولة</label>
+                            <input type="text" class="float_input form-control" id="address" placeholder=" الدولة التابع لها ">
+                        </div>
+                        <div class="col-lg-6 col-sm position-relative">
+                            <label for="confirm-address" class="floating-label">العنوان</label>
+                            <input type="text" class="float_input form-control" id="confirm-address" placeholder=" العنوان ">
+                        </div>
+                    </div>
+                    <div class="row g-3 pt-2">
+                        <div class="col-lg-6 col-sm position-relative">
+                            <label for="other" class="floating-label">تاريخ الرحله</label>
+                            <input type="text" class="float_input form-control" id="other" placeholder=" تاريخ الرحله ">
+                        </div>
+                        <div class="col-lg-6 col-sm position-relative">
+                            <label for="confirm-other" class="floating-label">رقم الهاتف</label>
+                            <input type="text" class="float_input form-control" id="confirm-other" placeholder=" رقم الهاتف ">
+                        </div>
+                    </div>
+                      <div class="row g-3 pt-2">
+                        <div class=" col-lg-6 col-sm">
+                            <div class="card">
+                                
+                                <div class="card-body">
+                                    <h6 class="card-subtitle mb-2 text-muted">خدمات إضافية</h6>
+                                    <div class=" d-flex justify-content-between  px-3">
+                                        <div>
+                                            <input class="form-check-input" type="radio" checked name="flexRadioDefault1" id="flexRadioDefault1">
+                                            <label class=" form-check-label mx-4 "  for="flexRadioDefault1">
+                                                كرسى أطفال 
+                                            </label>
+                                        </div>
+                                        <div class=""> 20$</div>
+
+                                    </div>
+
+                                    <div class=" d-flex justify-content-between  px-3">
+                                        <div>
+                                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                            <label class=" form-check-label mx-4 "  for="flexRadioDefault1">
+                                                نظام تحديد المواقع (GPS) 
+                                            </label>
+                                        </div>
+                                        <div class=""> 20$</div>
+
+                                    </div>
+
+                                </div>
+                              </div>
+                        </div>
+                       
+                        <div class=" col-lg-6 col-sm">
+                            <div class="card">
+                                
+                                <div class="card-body">
+                                    <h6 class="card-subtitle mb-2 text-muted">اختر طريقة الدفع </h6>
+                                    <div class="  px-3">
+                                        <input class="form-check-input" checked type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                        <label class="form-check-label mx-4"  for="flexRadioDefault1">
+                                            فيزا                          
+                                       </label>
+                                    </div>
+                                    <div class=" px-3">
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                        <label class="form-check-label mx-4"  for="flexRadioDefault1">
+                                            نقدي
+                                        </label>
+                                    </div>
+                                      
+
+                                </div>
+                              </div>
+                        </div>
+                      </div>
+                      <div class="row g-3 pt-2">
+                            <div class="col-lg-12 col-sm position-relative">
+                                <label for="confirm-other" class="floating-label">متطلبات اخرى ؟</label>
+                                <textarea class="form-control float_input" name="" id=""></textarea>
+                            </div>
+                        <div class="form-check col-12">
+                            <h5 class="mb-3">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label  mx-5 " for="flexCheckDefault">
+                                قد قرأت ووافقت على الشروط والأحكام
+                            </label>
+                        </h5>
+                            <button type="submit" class="bookbtn form-control  h-75  "  >
+                                احجز الان 
+                              
+
+                            </button>
+                          
+                          </div>
+                       
+                       
+                      </div>
+
+                </div>
+                <div class="col-lg-4 col-sm d-flex justify-content-center">
+                    <div class="card" style="width: 18rem;">
+                        <div class="card-body">
+                            <h3 class="card-title">فيينا - Vienna </h3>
+                            <div class="card-body">
+                                <div class="col-12 form-control mt-2 h-100 p-3">
+                                    <h6> تاريخ الرحلة :     14-5-2024
+                                    </h6>
+                                </div>
+                                <div class="col-12 form-control mt-2 h-100 p-3">
+                                    <h6> عدد الافراد : 5
+                                    </h6> 
+                                </div>
+                                <div class="col-12 form-control mt-2 h-100 p-3">
+                                    <h6> مدة الرحلة  :     3 ساعات
+                                    </h6>   
+                                </div>
+                                <div class="col-12 form-control mt-2 h-100 p-3" >
+                                    <h6> التكلفة :     150 $
+                                    </h6>             
+                                </div>
+                                <div class="col-12 form-control mt-2 h-100 p-3" >
+                                    <h6> كرسى أطفال :       20 $
+                                    </h6>             
+                                </div>
+                                <div class="col-12 form-control mt-2 h-100 p-3">
+                                <h6>
+                                    التكلفة نهائية  :   170 $
+                                </h6>
+                                </div>
+
+                              </div>
+
+                        </div>
+                    </div>
+                </div>
+                
+               
+              </div>
+        
+          
+        </div>
+        
+          </section>
+
+        </div>
+        <footer class="mt-5 container" >
+            <div class="row links  g-3">
+                <div class="col-lg-3 col-12  p-5">
+                    <img src="assets/images/logo2.png" alt="" srcset="">
+                </div>
+                <div class="col-lg-3 col-6 ">
+                    <ul>
+                    <li>
+                        <h4>الشركة</h4>
+                    </li>
+                    <li>
+                        <a href="http://">نبذة عنا</a>
+                    </li>
+                    <li>
+                        <a href="http://">الوظائف </a>
+                    </li>
+                    <li>
+                        <a href="http://">اتصل بنا</a>
+                    </li>
+                    <li>
+                        <a href="http://">خصوصية البيانات</a>
+                    </li>
+                    <li>
+                        <a href="http://"> الشروط والاحكام</a>
+                    </li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-6 ">
+                    <ul>
+                    <li>
+                        <h4>الخدمات التي نقدمها</h4>
+                    </li>
+                    <li>
+                        <a href="http://">نبذة عنا</a>
+                    </li>
+                    <li>
+                        <a href="http://">الوظائف </a>
+                    </li>
+                    <li>
+                        <a href="http://">اتصل بنا</a>
+                    </li>
+                    <li>
+                        <a href="http://">خصوصية البيانات</a>
+                    </li>
+                    <li>
+                        <a href="http://"> الشروط والاحكام</a>
+                    </li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-6 ">
+                    <ul>
+                    <li>
+                    <br>
+                    <br>
+                    </li>
+                    <li>
+                        <a href="http://"> اتصل بنا</a>
+                    </li>
+                    <li>
+                        <a href="http://">الوظائف </a>
+                    </li>
+                    <li>
+                        <a href="http://">اتصل بنا</a>
+                    </li>
+                    <li>
+                        <a href="http://">خصوصية البيانات</a>
+                    </li>
+                    <li>
+                        <a href="http://"> الشروط والاحكام</a>
+                    </li>
+                    </ul>
+                </div>
+                <hr style="height: 5px; background-color: #fff;" >
+                <div class="row   g-3">
+                    <div class="col-lg-9 col-md-12 col-sm-12  social p-2">
+                    <h5 class="d-inline-block" >تابعنا علي : 
+
+                    </h5>
+                    <div  class="d-lg-inline-block row mx-2">
+                    <a class="col-2" href="http://"><i class="fa-brands fa-facebook-f"></i></a>
+                    
+                    <a class="col-2" href="http://"><i class="fa-brands fa-instagram"></i></a>
+                
+                    <a class="col-2" href="http://"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a class="col-2" href="http://"><i class="fa-brands fa-x-twitter"></i></a>
+                    </div>
+                    </div>
+                    <div class="col-lg-3  col-md-12 ">
+                    <h6 style="text-align: end;" >Copyright © 2023 </h6>
+                    </div>
+                </div>
+          </div>
+          <!-- footer links -->
+        
+        </footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <script>
+            document.querySelectorAll('.thumbnail').forEach(thumbnail => {
+                thumbnail.addEventListener('click', function () {
+                    document.querySelectorAll('.thumbnail').forEach(t => t.classList.remove('active'));
+                    this.classList.add('active');
+                });
+            });
+        </script>
+    </body>
+</html>

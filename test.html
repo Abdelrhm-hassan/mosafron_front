@@ -3,66 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bootstrap Modal with Select2</title>
+    <title>Form Example</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/select2@4.0.13/dist/css/select2.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
 </head>
 <body>
+  <style>
+    .form-group {
+    margin-top: 40px; /* Space for the label */
+}
 
-<!-- Button to trigger modal -->
-<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
-  Open Modal
-</button>
+.floating-label {
+    position: absolute;
+    top: -10px;
+    right: 15px;
+    background-color: white;
+    padding: 0 5px;
+    font-family: "Your Custom Font", sans-serif;
+    font-size: 16px;
+    color: #00695c; /* Custom color for the label */
+}
 
-<!-- Modal -->
-<div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="myModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="myModalLabel">Select2 in Bootstrap Modal</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
+.form-control {
+    border-radius: 10px; /* Rounded corners */
+    padding: 10px; /* Padding inside the input */
+    border: 2px solid #00acc1; /* Border color */
+    font-family: "Your Custom Font", sans-serif;
+    font-size: 16px;
+    padding-right: 15px; /* Ensure padding for the label space */
+}
+
+  </style>
+    <div class="container">
         <form>
-          <div class="form-group">
-            <label for="exampleSelect">Example Select2</label>
-            <select class="form-control select2" id="exampleSelect">
-              <option value="1">Option 1</option>
-              <option value="2">Option 2</option>
-              <option value="3">Option 3</option>
-            </select>
-          </div>
+            <div class="form-group position-relative">
+                <label for="email" class="floating-label">البريد الإلكتروني</label>
+                <input type="email" class="form-control" id="email" placeholder="عنوان البريد الإلكتروني">
+            </div>
         </form>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
-      </div>
     </div>
-  </div>
-</div>
-
-<!-- Scripts -->
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/select2@4.0.13/dist/js/select2.min.js"></script>
-
-<script>
-  $(document).ready(function() {
-    // Disable Bootstrap's focus enforcement
-    $.fn.modal.Constructor.prototype.enforceFocus = function() {};
-
-    // Initialize Select2
-    $('.select2').select2();
-    
-    // Reinitialize Select2 when the modal is shown
-    $('#myModal').on('shown.bs.modal', function() {
-      $('.select2').select2();
-    });
-  });
-</script>
-
 </body>
 </html>
