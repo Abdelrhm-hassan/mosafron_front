@@ -375,9 +375,10 @@ width: 500px;
         
       }
       footer .social a{
-        padding:6px 16px;
+        padding:2px 12px;
         border: 1px solid white;
         margin: 5px;
+        text-align: center;
         border-radius: 9px;
         
       }
@@ -578,11 +579,13 @@ width: 500px;
 
 .card_title {
   color: #43766C !important;
-  display: -moz-inline-box;
-  display: -webkit-inline-box;
+  /* display: -moz-inline-box; */
+  display: flex;
+  justify-content: space-between;
+  /* display: -webkit-inline-box; */
 
 }
-.card_title h6{
+.card_title h5,span{
   font-weight: bold;
 }
 .card_title i{
@@ -709,4 +712,14 @@ width: 500px;
 .description h5{
   color: #43766C;
   font-weight: 400;
+}
+.card_title span{
+  margin-right: 20px;
+  text-align: center;
+}
+.bookbtn{
+  color: #fff !important;
+  background-color: #43766C !important;
+   padding: 10px 40px;
+   border-radius: 16px;
 }
